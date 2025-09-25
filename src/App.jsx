@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import Footer from './components/Footer'
 import Content from './components/Content'
@@ -6,14 +6,20 @@ import Namver from './components/Namver'
 
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [data,setData] =useState([])
+
+  useEffect(()=>{
+    fetch('data.json').then(res=>res.json()).then(json=>setData(json))
+  },[])
+
+  
 
   return (
     <>
      
     <Namver></Namver> 
 
-     <Content></Content>
+     <Content data={data}></Content>
     <Footer></Footer> 
    
 
