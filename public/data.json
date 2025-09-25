@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Login issue",
+    "description": "Customer cannot log in with correct credentials",
+    "customer": "Rahim",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-20"
+  },
+  {
+    "id": 2,
+    "title": "Payment failed",
+    "description": "Payment gateway declined customer card",
+    "customer": "Karim",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2025-09-18"
+  },
+  {
+    "id": 3,
+    "title": "App crashing",
+    "description": "Mobile app crashes on startup",
+    "customer": "Sadia",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-15"
+  },
+  {
+    "id": 4,
+    "title": "Slow performance",
+    "description": "Website loading too slowly",
+    "customer": "Jamil",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2025-09-17"
+  },
+  {
+    "id": 5,
+    "title": "Refund request",
+    "description": "Customer requested refund for last order",
+    "customer": "Nusrat",
+    "priority": "High",
+    "status": "Closed",
+    "createdAt": "2025-09-14"
+  },
+  {
+    "id": 6,
+    "title": "Profile update issue",
+    "description": "Unable to update profile picture",
+    "customer": "Hasan",
+    "priority": "Low",
+    "status": "Pending",
+    "createdAt": "2025-09-19"
+  },
+  {
+    "id": 7,
+    "title": "Order not delivered",
+    "description": "Customer didn’t receive order on time",
+    "customer": "Mitu",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-16"
+  },
+  {
+    "id": 8,
+    "title": "Subscription cancellation",
+    "description": "Customer wants to cancel subscription",
+    "customer": "Asif",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-09-12"
+  },
+  {
+    "id": 9,
+    "title": "Notification not received",
+    "description": "Push notifications not working on iOS",
+    "customer": "Tania",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-09-11"
+  },
+  {
+    "id": 10,
+    "title": "Password reset",
+    "description": "Password reset email not received",
+    "customer": "Imran",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2025-09-13"
+  }
+]
