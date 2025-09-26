@@ -3,6 +3,7 @@ import './App.css'
 import Footer from './components/Footer'
 import Content from './components/Content'
 import Namver from './components/Namver' 
+import { Suspense } from 'react'
 
 
 function App() {
@@ -15,12 +16,26 @@ function App() {
   
 
   return (
-    <>
-     
-    <Namver></Namver> 
+    <> 
+
+     <Suspense fallback={ <h1>Loading.....</h1>}> 
+
+      
+
+
+   <Namver></Namver> 
 
      <Content data={data}></Content>
     <Footer></Footer> 
+
+
+     </Suspense>
+
+    
+
+     
+     
+   
    
 
     </>
