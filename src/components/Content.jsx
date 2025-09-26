@@ -12,6 +12,8 @@ const Content = ({data}) => {
     const[statusTask,setStatusTask]=useState([]) 
     const [tickets,setTickets]=useState(data) 
 
+    const[resolveTask,setResolve]=useState([])
+
     useEffect(()=>{
       setTickets(data)
     },[data])
@@ -27,7 +29,24 @@ const Content = ({data}) => {
         setInProgress(inProgress+1)
         setTickets(tickets.filter(item=>item.id !==itemId)) 
 
-        toast.success(` Task Status Adding  `)
+        toast.success(` Task Status Adding `)
+
+
+    } 
+
+    const handleComplt=()=>{
+   
+        if(statusTask.length===0) return 
+
+        const complt_item=statusTask[0] 
+
+        setResolve([...resolveTask,complt_item])
+        setStatusTask(statusTask.slice(1)) 
+        setInProgress(inProgress - 1) 
+
+        toast.success(` Problem Solve Done `)
+
+
 
 
     }
@@ -52,31 +71,33 @@ const Content = ({data}) => {
 
 
 
-         <div className='flex flex-col md:flex-row gap-4 m-5'>
+  <div className='flex flex-col md:flex-row gap-4 m-5'>
 
-            <div className='rounded-md p-5 text-white text-center bg-gray-500 h-[150px] w-full md:w-1/2 flex flex-col text-xl'   style={{ 
-                backgroundImage:`linear-gradient(to right, rgba(99,46,227,0.7), rgba(159,98,242,0.7)), url(${vector1}),url(${vector2})`,backgroundRepeat:'repeat-x',backgroundSize:'contain',}}> 
+    <div className='rounded-md p-5 text-white text-center bg-gray-500 h-[150px] w-full md:w-1/2 flex flex-col text-xl'   style={{ 
+       backgroundImage:`linear-gradient(to right, rgba(99,46,227,0.7), rgba(159,98,242,0.7)), url(${vector1}),url(${vector2})`,backgroundRepeat:'repeat-x',backgroundSize:'contain',}}> 
              
-              In-progress <span className='text-3xl'>{inProgress}</span>
-                </div>  
+     In-progress <span className='text-3xl'>{inProgress}</span>
+     </div>  
 
-                 <div className='rounded-md p-5 text-white text-center bg-gray-500 h-[150px] w-full md:w-1/2 flex flex-col text-xl' style={{backgroundImage:`linear-gradient(to right, rgba(144,238,144,0.6), rgba(0,128,0,0.8)), url(${vector1}),url(${vector2})`,backgroundRepeat:'repeat-x',backgroundSize:'contain'}}> Resolved <span className='text-3xl'> 0 </span> 
+    <div className='rounded-md p-5 text-white text-center bg-gray-500 h-[150px] w-full md:w-1/2 flex flex-col text-xl' style={{backgroundImage:`linear-gradient(to right, rgba(144,238,144,0.6), rgba(0,128,0,0.8)), url(${vector1}),url(${vector2})`,backgroundRepeat:'repeat-x',backgroundSize:'contain'}}> Resolved <span className='text-3xl'> {resolveTask.length} 
+      
+      </span> 
 
 
-                </div> 
+    </div> 
 
-            </div> 
+  </div> 
         
        
-          <div className="font-bold text-2xl flex justify-between m-2">
+   <div className="font-bold text-2xl flex justify-between m-2">
 
             <p>Customer Tickets</p>
             <p>Task Status</p>
-          </div> 
+   </div> 
 
-          <section className='grid grid-cols-1 md:grid-cols-10 gap-3 mt-5 p-5'>
+   <section className='grid grid-cols-1 md:grid-cols-10 gap-3 mt-5 p-5'>
 
-           <div className="customer-ticket col-span-1 md:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-3 "> 
+       <div className="customer-ticket col-span-1 md:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-3 "> 
 
 
 
@@ -128,17 +149,37 @@ const Content = ({data}) => {
 
 
           <p>Title</p> 
-      <button className='w-full bg-green-500 p-2 mt-1'> Complete</button>
+      <button className='w-full bg-green-500 p-2 mt-1' onClick={handleComplt}> Complete</button>
 
        </div> 
 
-           <div className='mt-5 '>
+           <div className='mt-5 '> 
+                  <h2 className="text-2xl font-bold text-center"> Resolve task</h2> 
 
-             <h2 className="text-2xl font-bold text-center"> Resolve task</h2> 
+            {
+
+               resolveTask.map((task,index) => (
+
+            
+                  
+                 <div key={index} className='mt-2 p-2 bg-gray-200 rounded-md font-bold text-black'>
+                  <p>{task}</p> 
+                  <p>✅ Complete</p>
+
+
+                  </div>
+
+
+                  ))
+
+
+
+            }
+
+       
            <div className='bg-green-200'> 
 
-                   <p>Title solve</p> 
-              <p>Status complite</p>
+              
                     </div>
 
                    </div>
