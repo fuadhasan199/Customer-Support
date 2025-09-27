@@ -158,13 +158,13 @@ const Content = ({data}) => {
 
             {
 
-               resolveTask.map((task,index) => (
+               resolveTask.map((task,index) => ( 
 
             
                   
                  <div key={index} className='mt-2 p-2 bg-gray-200 rounded-md font-bold text-black'>
                   <p>{task}</p> 
-                  <p>✅ Complete</p>
+                  <p>✅ Issu Solve Complete</p>
 
 
                   </div>

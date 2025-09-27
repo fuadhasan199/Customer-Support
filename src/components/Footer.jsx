@@ -8,19 +8,19 @@ const Footer = () => {
           <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
        
 
-      <div className='flex flex-wrap justify-between items-start gap-10'> 
+      <div className='flex flex-wrap justify-around items-start gap-10'> 
           <div className="p-5 ">
             
             <h2 className='text-xl font-bold'>  CS — Ticket System  </h2> 
-            <p className='mt-2 footer-title'>CS — Ticket System. Our platform provides a fast and easy solution for ticket <br />management. Users can quickly create, track, <br /> and update their <tickets className="br"></tickets> Our goal is to ensure a seamless and secure <br />support experience. If you have any questions or issues, feel free to get in touch with us.</p> 
+            <p className='mt-2 footer-title w-[250px] '>CS — Ticket System. Our platform provides a fast and easy solution for ticket management. Users can quickly create, track, and update their  Our goal is to ensure a seamless and secure support experience. If you have any questions or issues, feel free to get in touch with us.</p> 
             
             
             
             
              </div> 
-             <div className="flex flex-col gap-2">
+             <div className="flex flex-col gap-2 ml-[80px]">
 
-                <h2 className='font-bold text-xl'>Company</h2> 
+                <h2 className='font-bold text-xl '>Company</h2> 
                  
                     
                
@@ -30,7 +30,7 @@ const Footer = () => {
              </div>  
 
 
-                  <div className="flex flex-col gap-y-2 "> 
+                  <div className="flex flex-col gap-y-2 ml-10 "> 
       
                 <h2 className='font-bold text-xl gap-2'>Services</h2> 
                 <a href=""className='' >Product & services</a>
@@ -38,17 +38,17 @@ const Footer = () => {
                     <a href="">Dawnload apps</a>
              </div>  
 
-              <div className="flex flex-col gap-y-2">
+              <div className="flex flex-col gap-y-2 ml-8">
 
-                <h2  className='font-bold text-xl gap-2 '>Information</h2> 
+                <h2  className='font-bold text-xl gap-2  '>Information</h2> 
                 <a href="">Privacy Policy</a>
                 <a href="">Terms & Condition</a>
                     <a href="">Join us</a>
              </div>  
               
-            <div className='flex flex-col gap-y-2'>
+            <div className='flex flex-col gap-y-2 ml-12'>
                 <h2  className='font-bold text-xl gap-2'>Social</h2> 
-                <div className="">
+                <div className=" ">
           <a className='flex gap-2'>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ const Footer = () => {
 
 
 
-
+<p>© 2025 CS — Ticket System. All rights reserved.</p>
 
 
 
