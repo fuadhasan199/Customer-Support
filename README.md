@@ -1,16 +1,28 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Question 1 : What is JSX, and why is it used? 
 
-Currently, two official plugins are available:
+answer  1   : JSX (JavaScript XML) is a JavaScript syntax extension that lets you write HTML-like code inside React. It is used to make code simpler, more readable, and to combine UI with logic in one place.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Question 2 :What is the difference between State and Props? 
 
-## Expanding the ESLint configuration
+answer  2 : State is a built in object in React that stores data that can change over time with a component , Props are read only inputs passed from a parent component to a child component .
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+Question  3 : What is the useState hook, and how does it work? 
+
+answer   3 : useState is a React hook that lets you add state of a functional component it returns an array with two value ,The current state and a function  to a update that state 
+
+
+
+Question 4 : How can you share state between components in React?
+
+answer   4 : You can share state between components in React by lifting state up to there closeset common parent component and passing it dawn as props .
+
+
+
+Question 5 : How is event handling done in React? 
+
+answer  5 : Event handling in React is Done using onClick, onChange and passing function as event handlers 
