@@ -3,7 +3,7 @@ import React from 'react';
 const Namver = () => {
     return (
          <div> 
-            <div className='flex justify-between p-4 bg-white shadow-lg '>
+            <div className='flex justify-between p-4 bg-white shadow-lg gap-1 '>
 
            
              <div className="logo font-bold text-2xl">CS — Ticket System</div> 

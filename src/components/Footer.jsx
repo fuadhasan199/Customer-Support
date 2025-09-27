@@ -5,7 +5,7 @@ const Footer = () => {
         <div className='mt-20'>
            
 
-          <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+          <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 bg-black text-white">
        
 
       <div className='flex flex-wrap justify-around items-start gap-10'> 
